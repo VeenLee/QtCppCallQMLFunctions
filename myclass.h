@@ -3,7 +3,6 @@
 
 #include <QObject>
 #include <QVariant>
-#include <QDebug>
 
 class MyClass : public QObject
 {
@@ -17,9 +16,7 @@ signals:
     void sig_disp(QVariant strInfo);
 
 public slots:
-    void testSlot2() {
-        qDebug() << "text from QML call";
-    }
+    void testSlot2();
 
 };
 
